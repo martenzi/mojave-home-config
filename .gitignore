@@ -1,4 +1,5 @@
 # Dotfiles User Specific .gitignore
+.git/
 
 # Ignore the Global ignore file
 .gitignore_global
