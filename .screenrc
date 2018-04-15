@@ -1,0 +1,13 @@
+# # Enable mouse scrolling and scroll bar history scrolling
+# termcapinfo xterm*-unicode ti@:te@
+# termcapinfo xterm* ti@:te@
+# termcapinfo xterm* 'hs:ts=\E]2;:fs=07:ds=\E]2;screen07'
+
+# termcapinfo vt100*-unicode ti@:te@
+# termcapinfo vt100* ti@:te@
+# termcapinfo vt100* 'hs:ts=\E]2;:fs=07:ds=\E]2;screen07'
+
+# # The cursor left key deletes the characters instead of just moving the cursor. A redisplay (^Al) brings everything back.
+# # Solution: Your terminal emulator (probably xterm) treats the backspace as "destructive". You can probably change this somewhere in the setup. We # can't think of a reason why anybody would want a destructive backspace, but if you really must have it, add the line:
+# termcapinfo xterm 'bc@:bs@'
+# termcapinfo vt100 'bc@:bs@'
