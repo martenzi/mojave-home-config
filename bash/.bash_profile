@@ -17,6 +17,11 @@ export PATH=/Applications/Sublime\ Text\ \(dev3160\).app:$PATH
 export PATH=/usr/local:$PATH
 export PATH=/usr/local/opt:$PATH
 
+# this is the root folder where all globally installed node packages will  go
+export PATH="$NPM_PACKAGES/bin:$PATH"
+export NPM_PACKAGES="/usr/local/npm_packages"
+export NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
+
 # export PATH=/usr/local/Cellar/python@2/2.7.14_3:$PATH
 # export PATH=/Library/Frameworks/Python.framework/Versions/3.6/bin:$PATH
 

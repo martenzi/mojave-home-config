@@ -40,7 +40,7 @@ export ZPLUG_HOME=/usr/local/opt/zplug
 
 # Preferred editor for local and remote sessions
 if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='Subl -w'
+  export EDITOR='Subl -m -w'
 else
   export EDITOR='mvim'
 fi
