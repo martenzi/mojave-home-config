@@ -37,3 +37,5 @@ Temporary Items
 *.tmPreferences.cache
 *.stTheme.cache
 \.iterm2_shell_integration\.zsh\.old
+
+bash/bash_profile copy
