@@ -15,15 +15,12 @@ export PATH="/usr/local/git/bin:$PATH"
 export PATH="/sw/bin/:$PATH"
 export PATH="/usr/local/:$PATH"
 export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/opt:$PATH"
 export PATH="/usr/local/mysql/bin:$PATH"
+export PATH="/usr/local/bin/git:$PATH"
 
-# export PATH=/usr/local/bin/git:$PATH
 export PATH="/usr/local/Cellar:$PATH"
 export PATH="/usr/local/Cellar/ruby/2.5.1:$PATH"
-# Had several issues with getting Subl to be recognized.
-# export PATH=/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl:$PATH
-# export PATH=/usr/local:$PATH
-# export PATH=/usr/local/opt:$PATH
 
 # this is the root folder where all globally installed node packages will  go
 export PATH="$NPM_PACKAGES/bin:$PATH"
@@ -34,7 +31,17 @@ export NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
 # export PATH=/Library/Frameworks/Python.framework/Versions/3.6/bin:$PATH
 
 # set EDITOR to SublimeText3
-    # export EDITOR="subl-dev -w"
+    # export EDITOR="/Applications/Sublime\ Text.app/Contents/MacOS/Sublime\ Text"
+    export EDITOR='subl -m -w'
+    # export PATH="/Applications/Sublime\ Text.app"
+    # export PATH="subl"
+    # /Applications/Sublime\ Text.app/Contents/MacOS/Sublime\ Text
+    # /Applications/Sublime\ Text.app/Contents/MacOS/Sublime\ Text -w'
+    # /Applications/Sublime\ Text.app
+    # export EDITOR='subl -a -w'
+    # /Applications/Sublime Text.app
+
+    # /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl
 
 
 test -f ~/.bashrc && source ~/.bashrc

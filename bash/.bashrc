@@ -89,8 +89,6 @@ alias bare='/usr/bin/git --git-dir=$HOME/.home_config/ --work-tree=$HOME'
 # alias gtg="git tag"
 # alias gbr="git branch"
 # alias gs="git svn"
-alias brewall='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
-alias bare='/usr/bin/git --git-dir=$HOME/.home_config/ --work-tree=$HOME'
 
 #-------------------------#
 # MACOS TWEAKS - TERMINAL #
