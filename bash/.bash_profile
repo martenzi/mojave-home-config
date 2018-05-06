@@ -30,22 +30,13 @@ export PATH="$NPM_PACKAGES/bin:$PATH"
 export NPM_PACKAGES="/usr/local/npm_packages"
 export NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
 
-# export PATH=/usr/local/Cellar/python@2/2.7.14_3:$PATH
-# export PATH=/Library/Frameworks/Python.framework/Versions/3.6/bin:$PATH
-
 # set EDITOR to SublimeText3
-    # export EDITOR="/Applications/Sublime\ Text.app/Contents/MacOS/Sublime\ Text"
-    export EDITOR='subl -m -w'
-    # export PATH="/Applications/Sublime\ Text.app"
-    # export PATH="subl"
-    # /Applications/Sublime\ Text.app/Contents/MacOS/Sublime\ Text
-    # /Applications/Sublime\ Text.app/Contents/MacOS/Sublime\ Text -w'
-    # /Applications/Sublime\ Text.app
-    # export EDITOR='subl -a -w'
-    # /Applications/Sublime Text.app
+export EDITOR='subl -m -w'
 
-    # /Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl
-
-
+# Test if bash files exists in HOME and source them
 test -f ~/.bashrc && source ~/.bashrc
+test -f ~/.bashrc && source ~/.bashrc
+
+# Sourcing iTerm2´s Shell Integration config
+# https://www.iterm2.com/documentation-shell-integration.html
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
