@@ -9,13 +9,21 @@
 echo "*** fucking splendid .bash_profile"
 
 # Ensure user-installed binaries take precedence
-export PATH=~/binaries:$PATH
-export PATH=/usr/local/bin/git:$PATH
-export PATH=/usr/local/Cellar:$PATH
+export PATH="~/binaries:$PATH"
+export PATH="/usr/local/bin/:$PATH"
+export PATH="/usr/local/git/bin:$PATH"
+export PATH="/sw/bin/:$PATH"
+export PATH="/usr/local/:$PATH"
+export PATH="/usr/local/sbin:$PATH"
+export PATH="/usr/local/mysql/bin:$PATH"
+
+# export PATH=/usr/local/bin/git:$PATH
+export PATH="/usr/local/Cellar:$PATH"
+export PATH="/usr/local/Cellar/ruby/2.5.1:$PATH"
 # Had several issues with getting Subl to be recognized.
-export PATH=/Applications/Sublime\ Text\ \(dev3160\).app:$PATH
-export PATH=/usr/local:$PATH
-export PATH=/usr/local/opt:$PATH
+# export PATH=/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl:$PATH
+# export PATH=/usr/local:$PATH
+# export PATH=/usr/local/opt:$PATH
 
 # this is the root folder where all globally installed node packages will  go
 export PATH="$NPM_PACKAGES/bin:$PATH"
