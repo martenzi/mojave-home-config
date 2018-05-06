@@ -36,3 +36,4 @@ Temporary Items
 *.tmlanguage.cache
 *.tmPreferences.cache
 *.stTheme.cache
+\.iterm2_shell_integration\.zsh\.old
