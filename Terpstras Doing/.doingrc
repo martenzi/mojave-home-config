@@ -36,24 +36,9 @@ views:
     date_format: "%F %_I:%M%P"
     template: "%boldblack%date %boldgreen| %boldwhite%title%default%note"
     wrap_width: 0
-    section: Currently
+    section: Right Now
     count: 10
     order: asc
-  old:
-    section: Old
-    count: 5
-    wrap_width: 0
-    date_format: "%F %_I:%M%P"
-    template: "%date | %title%note"
-    order: asc
-    tags: done finished cancelled
-    tags_bool: ANY
-  later:
-    section: Later
-    count: 5
-    wrap_width: 60
-    date_format: "%F %_I:%M%P"
-    template: "%date | %title%note"
 marker_tag: flagged
 marker_color: red
 default_tags: []
