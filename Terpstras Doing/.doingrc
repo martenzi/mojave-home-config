@@ -11,17 +11,22 @@ templates:
     template: "%date | %title%note"
     wrap_width: 0
   today:
-    date_format: "%_I:%M%P"
+    date_format: "%H:%M"
     template: "%date: %title %interval%note"
     wrap_width: 0
   last:
-    date_format: "%-I:%M%P on %a"
+    date_format: "%-H:%M on %a"
     template: "%title (at %date)%odnote"
     wrap_width: 88
   recent:
-    date_format: "%_I:%M%P"
-    template: "%shortdate: %title"
-    wrap_width: 88
+    date_format: "%H:%M"
+    template: |-
+      %hr_under
+      %date
+       > %title%odnote
+
+      %hr_under
+    wrap_width: 100
 views:
   done:
     date_format: "%_I:%M%P"
