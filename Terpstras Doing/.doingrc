@@ -2,8 +2,8 @@
 autotag:
   whitelist: []
   synonyms: {}
-doing_file: "~/what_was_i_doing.md"
-current_section: Rightnow
+doing_file: "/Volumes/SpaceX/Martenzi/Desktop/Taskpaper/project_cleanup_samsung_day1.taskpaper"
+current_section: Right Now
 editor_app: 
 templates:
   default:
