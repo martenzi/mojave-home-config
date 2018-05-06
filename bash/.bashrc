@@ -69,6 +69,9 @@ alias godsent='tee ~/Desktop/terminalOut.txt'    	# DT:           Pipe content t
 #-------------------------#
 # ALIASSES - APPLICATIONS #
 #-------------------------#
+alias brewall='brew update; brew upgrade; brew prune; brew cleanup; brew doctor'
+alias bare='/usr/bin/git --git-dir=$HOME/.home_config/ --work-tree=$HOME'
+# alias edit
 #alias cal="cal -m -3"
 # alias gsh="git stash"
 # alias gst="git status --short --branch"
