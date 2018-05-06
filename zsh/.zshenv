@@ -27,7 +27,7 @@ export PATH=/usr/local/bin:$PATH
 
 # Path to EDITOR
 # Had several issues with getting Subl to be recognized.
-export PATH=/Applications/Sublime\ Text\ \(dev3160\).app:$PATH
+# export PATH=/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl:$PATH
 
 # Path to MANPAHES
 export MANPATH="/usr/local/man:$MANPATH"
