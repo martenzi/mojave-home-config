@@ -12,38 +12,40 @@ echo "*** now executing .zshenv"
 # SHELL - PATHS           #
 #-------------------------#
 
+
+export PATH=/usr/local/bin:$PATH
+
 # Path to your oh-my-zsh installation.
-export ZSH=/Volumes/SpaceX/Martenzi/.oh-my-zsh
+export ZSH=/Volumes/Mojave/Users/z/.oh-my-zsh
 
 # Path to your ~ binaries
 export PATH=~/binaries:$PATH
 
 # Path to your Homebrew binaries
-export PATH=/usr/local/Cellar:$PATH
+export PATH=$PATH:/usr/local/Cellar
 
 # Path to local and system binaries
-export PATH=/usr/local:$PATH
-export PATH=/usr/local/bin:$PATH
+export PATH=$PATH:/usr/local:usr/local/bin
 
 # Path to EDITOR
 # Had several issues with getting Subl to be recognized.
-# export PATH=/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl:$PATH
+# export PATH="/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl:$PATH"
 
 # Path to MANPAHES
 export MANPATH="/usr/local/man:$MANPATH"
 
 # Path to SSH
-export SSH_KEY_PATH="~/.ssh/id_rsa_bitbucket.ssh.key"
+#export SSH_KEY_PATH="~/.ssh/id_rsa_bitbucket.ssh.key"
 
 # Path to ZSH plugin manager ZPLUG
-export ZPLUG_HOME=/usr/local/opt/zplug
+#export ZPLUG_HOME=/usr/local/opt/zplug
 
 # Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='Subl -m -w'
-else
-  export EDITOR='mvim'
-fi
+# if [[ -n $SSH_CONNECTION ]]; then
+  export EDITOR='subl'
+# else
+#   export EDITOR='mvim'
+# fi
 
 #-------------------------#
 # THEME - configuration   #
@@ -59,7 +61,7 @@ fi
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="powerlevel9k/powerlevel9k"
+#ZSH_THEME="powerlevel9k/powerlevel9k"
 
 # THEME OPTIONS for PowerLine9k
 
@@ -69,12 +71,12 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 # If you would like to have the segments display on one line,
 # and print the command prompt below it,
 # simply define POWERLEVEL9K_PROMPT_ON_NEWLINE in your ~/.zshrc:
-POWERLEVEL9K_PROMPT_ON_NEWLINE=false
+# POWERLEVEL9K_PROMPT_ON_NEWLINE=false
 
 # If you want the right prompt to appear on the newline as well,
 # simply define POWERLEVEL9K_RPROMPT_ON_NEWLINE as well in your ~/.zshrc:
-POWERLEVEL9K_PROMPT_ON_NEWLINE=true
-POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
+# POWERLEVEL9K_PROMPT_ON_NEWLINE=true
+# POWERLEVEL9K_RPROMPT_ON_NEWLINE=true
 
 # You can customize the icons used to
 # draw the multi-line prompt by setting the following variables in your ~/.zshrc:
@@ -165,6 +167,7 @@ plugins=(
 # SOURCE - configuration  #
 #-------------------------#
 
+# source /Volumes/SpaceX/Martenzi/dotfiles/zsh/.zshrc
 source ~/.oh-my-zsh/oh-my-zsh.sh
 # source ~/.iterm2_shell_integration.zsh
 source $ZPLUG_HOME/init.zsh
