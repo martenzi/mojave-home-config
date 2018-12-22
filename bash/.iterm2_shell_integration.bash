@@ -8,30 +8,6 @@ ITERM_SHELL_INTEGRATION_INSTALLED=Yes
 # (including various custom escape sequences).
 ITERM_PREV_PS1="$PS1"
 
-# -- END ITERM2 CUSTOMIZATIONS --
-
-# The following chunk of code, bash-preexec.sh, is licensed like this:
-# The MIT License
-#
-# Copyright (c) 2015 Ryan Caloras and contributors (see https://github.com/rcaloras/bash-preexec)
-#
-# Permission is hereby granted, free of charge, to any person obtaining a copy
-# of this software and associated documentation files (the "Software"), to deal
-# in the Software without restriction, including without limitation the rights
-# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-# copies of the Software, and to permit persons to whom the Software is
-# furnished to do so, subject to the following conditions:
-#
-# The above copyright notice and this permission notice shall be included in
-# all copies or substantial portions of the Software.
-#
-# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
-# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
-# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
-# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
-# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
-# THE SOFTWARE.
 
 # Wrap bash-preexec.sh in a function so that, if it exits early due to having
 # been sourced elsewhere, it doesn't exit our entire script.
@@ -46,12 +22,6 @@ _install_bash_preexec () {
 # 'preexec' functions are executed before each interactive command is
 # executed, with the interactive command as its argument. The 'precmd'
 # function is executed before each prompt is displayed.
-#
-# Author: Ryan Caloras (ryan@bashhub.com)
-# Forked from Original Author: Glyph Lefkowitz
-#
-# V0.3.7
-#
 
 # General Usage:
 #
