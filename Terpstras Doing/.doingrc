@@ -2,8 +2,8 @@
 autotag:
   whitelist: []
   synonyms: {}
-doing_file: "/Volumes/SpaceX/Martenzi/Desktop/Taskpaper/project_cleanup_samsung_day1.taskpaper"
-current_section: Right Now
+doing_file: "/Volumes/Z/z---Taskpaperz/martenzi_hq.taskpaper"
+current_section: Rightnow
 editor_app: 
 templates:
   default:
@@ -11,22 +11,17 @@ templates:
     template: "%date | %title%note"
     wrap_width: 0
   today:
-    date_format: "%H:%M"
+    date_format: "%_I:%M%P"
     template: "%date: %title %interval%note"
     wrap_width: 0
   last:
-    date_format: "%-H:%M on %a"
+    date_format: "%-I:%M%P on %a"
     template: "%title (at %date)%odnote"
     wrap_width: 88
   recent:
-    date_format: "%H:%M"
-    template: |-
-      %hr_under
-      %date
-       > %title%odnote
-
-      %hr_under
-    wrap_width: 100
+    date_format: "%_I:%M%P"
+    template: "%shortdate: %title"
+    wrap_width: 88
 views:
   done:
     date_format: "%_I:%M%P"
@@ -41,9 +36,24 @@ views:
     date_format: "%F %_I:%M%P"
     template: "%boldblack%date %boldgreen| %boldwhite%title%default%note"
     wrap_width: 0
-    section: Right Now
+    section: Currently
     count: 10
     order: asc
+  old:
+    section: Old
+    count: 5
+    wrap_width: 0
+    date_format: "%F %_I:%M%P"
+    template: "%date | %title%note"
+    order: asc
+    tags: done finished cancelled
+    tags_bool: ANY
+  later:
+    section: Later
+    count: 5
+    wrap_width: 60
+    date_format: "%F %_I:%M%P"
+    template: "%date | %title%note"
 marker_tag: flagged
 marker_color: red
 default_tags: []
