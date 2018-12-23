@@ -2,13 +2,13 @@
 autotag:
   whitelist: []
   synonyms: {}
-doing_file: "/Volumes/Z/z---Taskpaperz/martenzi_hq.taskpaper"
+doing_file: "~/Desktop/martenzi-journalz.taskpaper"
 current_section: Right Now
-editor_app: "/Applications/Sublime Text.app/Contents/MacOS/Sublime Text"
+editor_app: "/Applications/BBedit.app"
 templates:
   default:
-    date_format: "%Y-%m-%d %H:%M"
-    template: "%date | %title%note"
+    date_format: "%Y-%m-%d\t%H:%M:%S"
+    template: "%date | %title %note"
     wrap_width: 0
   today:
     date_format: "%_I:%M%P"
@@ -34,26 +34,11 @@ views:
     tags_bool: OR
   color:
     date_format: "%F %_I:%M%P"
-    template: "%boldblack%date %boldgreen| %boldwhite%title%default%note"
+    template: "%boldblue%date %boldgreen| %boldwhite%title%default%note"
     wrap_width: 0
-    section: Currently
+    section: Right Now
     count: 10
     order: asc
-  old:
-    section: Old
-    count: 5
-    wrap_width: 0
-    date_format: "%F %_I:%M%P"
-    template: "%date | %title%note"
-    order: asc
-    tags: done finished cancelled
-    tags_bool: ANY
-  later:
-    section: Later
-    count: 5
-    wrap_width: 60
-    date_format: "%F %_I:%M%P"
-    template: "%date | %title%note"
 marker_tag: flagged
 marker_color: red
 default_tags: []
