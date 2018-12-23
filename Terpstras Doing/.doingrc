@@ -3,8 +3,8 @@ autotag:
   whitelist: []
   synonyms: {}
 doing_file: "/Volumes/Z/z---Taskpaperz/martenzi_hq.taskpaper"
-current_section: Rightnow
-editor_app:  "/Applications/Sublime\ Text.app/Contents/MacOS/Sublime\ Text"
+current_section: Right Now
+editor_app: "/Applications/Sublime Text.app/Contents/MacOS/Sublime Text"
 templates:
   default:
     date_format: "%Y-%m-%d %H:%M"
