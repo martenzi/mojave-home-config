@@ -42,7 +42,7 @@ export MANPATH="/usr/local/man:$MANPATH"
 
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
-  export EDITOR='subl'
+  export EDITOR="Applications/BBedit"
 # else
 #   export EDITOR='mvim'
 # fi
