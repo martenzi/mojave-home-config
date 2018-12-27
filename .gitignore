@@ -1,6 +1,9 @@
 # Dotfiles User Specific .gitignore
 .git/
 
+# Ignore Bare config file (possibly old)
+.bare_config
+
 # Ignore the Global ignore file
 .gitignore_global
 
@@ -38,5 +41,8 @@ Temporary Items
 *.stTheme.cache
 \.iterm2_shell_integration\.zsh\.old
 
-bash/bash_profile copy
-*.sh_history
+# Ignore automatically created shell history files
+.sh_history
+.bash_history
+/YouTube-DL/
+/misc/
