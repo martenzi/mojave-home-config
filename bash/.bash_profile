@@ -12,7 +12,7 @@ echo "*** .bash_profile"
 [ -z "$PS1" ] && return
 
 # set EDITOR to SublimeText3
-export EDITOR="'~/binaries/subl' -w"
+export EDITOR="/Applications/BBedit"
 
 # this is the root folder where all globally installed node packages will  go
 export NPM_PACKAGES="/usr/local/npm_packages"
@@ -31,5 +31,5 @@ export NODE_PATH="$NPM_PACKAGES/lib/node_modules:$NODE_PATH"
 
 # Test if bash files exists in HOME and source them
 
-test -f ~/dotfiles/bash/.bashrc && source ~/dotfiles/bash/.bashrc
+test -f ~/Config/dotfiles/bash/.bashrc && source ~/Config/dotfiles/bash/.bashrc
 
